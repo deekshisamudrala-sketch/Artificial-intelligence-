@@ -1,0 +1,27 @@
+import turtle
+
+# Set up the screen
+screen = turtle.Screen()
+screen.title("Machine writing letters using pen")
+screen.bgcolor("white")
+
+# Create the turtle object
+pen = turtle.Turtle()
+pen.hideturtle()
+pen.speed(5)
+pen.pensize(2)
+
+# Move the pen to a starting position
+pen.penup()
+pen.goto(-200, 0)
+pen.pendown()
+
+# The message to write
+message = "Hello"
+
+# Write the message like a machine would
+pen.write(message, font=("Courier", 36, "normal"))
+
+# Finish
+pen.hideturtle()
+screen.mainloop()
